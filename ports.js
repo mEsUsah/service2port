@@ -68,6 +68,10 @@ let services = [
         name: "NTP",
         port: "123"
     },
+    {
+        name: "Syslog",
+        port: "514"
+    },
 ]
 
 let assignment;
