@@ -59,6 +59,17 @@
             width: fit-content; 
             border-radius: 4px;
         }
+        #subnetting__hint{
+            background-color: #a84141; 
+            padding: 10px; 
+            width: fit-content; 
+            border-radius: 4px;
+            opacity: 0;
+            transition: all 0.2s;
+        }
+        #subnetting__hint.active{
+            opacity: 1;
+        }
 
     </style>
 </head>
@@ -66,7 +77,14 @@
     <h1>service 2 port</h1>
     <p>find the correct port number associated with the service</p>
     <hr>
-    <pre id="subnetting__address"></pre>
+    <div>
+        <div style="display:inline-block">
+            <pre id="subnetting__address"></pre> 
+        </div>
+        <div style="display:inline-block">
+            <pre id="subnetting__hint">hello</pre>
+        </div>
+    </div>
 
     </div>
     <input type="text" name="" id="subnetting__input">

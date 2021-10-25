@@ -1,5 +1,6 @@
 let userInput = document.getElementById("subnetting__input");
 let assignmentText = document.getElementById("subnetting__address");
+let assingmentHint = document.getElementById("subnetting__hint");
 let checkButton = document.getElementById("subnetting__checkbutton");
 let difficultySelector = document.querySelectorAll('input[name="subnetting__level"]');
 let alerts = document.getElementById("subnetting__alerts");
@@ -41,7 +42,7 @@ let services = [
     },
     {
         name: "DHCP-server",
-        port: "69"
+        port: "67"
     },
     {
         name: "TFTP",
@@ -73,6 +74,8 @@ let score = 0;
 function generateAssignment(){
     assignment = Math.floor(Math.random()*services.length);
     assignmentText.innerText = services[assignment].name;
+    assingmentHint.innerText = services[assignment].port;
+
 }
 
 function gradeAnswer(){
@@ -110,6 +113,11 @@ function displayError(){
     userInput.classList.add("error");
     setTimeout(() => {
         userInput.classList.remove("error");
+    }, 1000);
+
+    assingmentHint.classList.add("active");
+    setTimeout(() => {
+        assingmentHint.classList.remove("active");
     }, 1000);
 }
 
