@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>port2service</title>
+    <title>service2port</title>
     <style>
         body{
             background-color: gray; 
@@ -70,6 +70,16 @@
         #subnetting__hint.active{
             opacity: 1;
         }
+        #credits{
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+        }
+        #credits a{
+            color: rgb(118 221 85);
+            font-weight: 600;
+            text-decoration: none;
+        }
 
     </style>
 </head>
@@ -93,6 +103,7 @@
     <div id="subnetting__notications">
         <span id="subnetting__notications--score">0</span> / <span id="subnetting__notications--attempts">0</span>
     </div>
+    <p id="credits">Written by Stanley Skarshaug - <a href="https://www.haxor.no">HAXOR.no</a></p>
 
     <script src="ports.js"></script>
 </body>
