@@ -29,6 +29,10 @@ let services = [
         port: "22"
     },
     {
+        name: "Telnet",
+        port: "23"
+    },
+    {
         name: "SMTP",
         port: "25"
     },
