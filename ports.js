@@ -137,16 +137,6 @@ checkButton.addEventListener('click', ()=>{
     checkAnswer();
 });
 
-difficultySelector.forEach((element)=>{
-    element.addEventListener("change", () => {
-        if (element.checked == true){
-            networkClass = element.value;
-            generateAssignment(networkClass);
-        }
-    })
-})
-
-
 window.addEventListener('keydown', (event)=>{
     if (event.key == "Enter"){
         checkAnswer();
