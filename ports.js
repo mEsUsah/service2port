@@ -6,6 +6,7 @@ let difficultySelector = document.querySelectorAll('input[name="subnetting__leve
 let alerts = document.getElementById("subnetting__alerts");
 let attemptsDisplay = document.getElementById("subnetting__notications--attempts");
 let scoreDisplay = document.getElementById("subnetting__notications--score");
+let streakDisplay = document.getElementById("subnetting__notications--streak");
 
 let services = [
     {
@@ -77,6 +78,7 @@ let services = [
 let assignment;
 let attempts = 0;
 let score = 0;
+let streak = 0;
 
 
 function generateAssignment(){
@@ -91,9 +93,11 @@ function gradeAnswer(){
     if (userInputReading == services[assignment].port){
         attempts++;
         score++;
+        streak++;
         return true;
     } else {
         attempts++;
+        streak = 0;
         return false;
     }
 }
@@ -108,6 +112,8 @@ function checkAnswer(){
     }
     attemptsDisplay.innerText = attempts;
     scoreDisplay.innerText = score;
+    streakDisplay.innerText = streak;
+
 }
 
 function displayCorrect(){
