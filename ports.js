@@ -18,7 +18,7 @@ let services = [
         port: "443"
     },
     {
-        name: "FTP-data",
+        name: "FTP-Data",
         port: "20"
     },
     {
