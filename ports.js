@@ -38,6 +38,10 @@ let services = [
         port: "25"
     },
     {
+        name: "TACACS+",
+        port: "59"
+    },
+    {
         name: "DNS",
         port: "53"
     },
