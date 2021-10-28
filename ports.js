@@ -19,11 +19,11 @@ let services = [
     },
     {
         name: "FTP-data",
-        port: "21"
+        port: "20"
     },
     {
         name: "FTP-Control",
-        port: "20"
+        port: "21"
     },
     {
         name: "SSH",
