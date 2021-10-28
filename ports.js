@@ -77,6 +77,14 @@ let services = [
         name: "Syslog",
         port: "514"
     },
+    {
+        name: "RADIUS Authentication",
+        port: "1812"
+    },
+    {
+        name: "RADIUS Accounting",
+        port: "1813"
+    },
 ]
 
 let assignment;
