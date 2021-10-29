@@ -46,11 +46,11 @@ let services = [
         port: "53"
     },
     {
-        name: "DHCP-client",
+        name: "DHCP-Client",
         port: "68"
     },
     {
-        name: "DHCP-server",
+        name: "DHCP-Server",
         port: "67"
     },
     {
